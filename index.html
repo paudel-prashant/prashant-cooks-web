@@ -104,7 +104,7 @@
         // Load featured recipes on homepage
         async function loadFeaturedRecipes() {
             try {
-                const response = await fetch('/data/recipes.json');
+                const response = await fetch('data/recipes.json');
                 const data = await response.json();
                 const recipes = data.recipes || [];
                 const featured = recipes.slice(0, 6); // Show first 6 recipes
