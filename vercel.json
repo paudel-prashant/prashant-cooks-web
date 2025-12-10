@@ -21,6 +21,28 @@
       "destination": "/recipe.html"
     }
   ],
+  "redirects": [
+    {
+      "source": "/recipes/",
+      "destination": "/recipes",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/recipe/",
+      "destination": "/recipe",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
