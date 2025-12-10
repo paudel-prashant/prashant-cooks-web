@@ -520,10 +520,10 @@ footer a::after {
 .recipe-card-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: center;
-    background-color: var(--bg-light-secondary);
 }
 
 .recipe-card-image-wrapper::after {
@@ -690,14 +690,13 @@ footer a::after {
 .recipe-image {
     width: 100%;
     max-width: 900px;
-    height: auto;
-    max-height: 600px;
-    object-fit: contain;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
     border-radius: var(--border-radius);
     margin-bottom: 2.5rem;
     box-shadow: var(--shadow-hover);
     border: 1px solid var(--border-color);
-    background-color: var(--bg-light-secondary);
 }
 
 .recipe-meta {
@@ -1290,7 +1289,7 @@ footer a:not(.social-links a)::after {
     }
 
     .recipe-image {
-        max-height: 400px;
+        height: 300px;
     }
 
     .recipe-card-image-wrapper {
