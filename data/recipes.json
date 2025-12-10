@@ -1,8 +1,143 @@
 {
     "recipes": [
         {
+            "id": "happy-gut-fruit-bowl",
+            "title": "Happy Gut Fruit Bowl",
+            "date": "2025-12-10",
+            "image": "happy-gut-fruit-bowl.jpg",
+            "category": [
+                "Healthy",
+                "Breakfast"
+            ],
+            "difficulty": "Easy",
+            "time": "10 minutes",
+            "ingredients": [
+                "2 small containers Oikos Greek yogurt",
+                "250g diced mango",
+                "180g diced banana",
+                "1 tsp chia seeds (bloomed in water)",
+                "Handful of blueberries for topping"
+            ],
+            "steps": [
+                "Bloom the chia seeds in a little water for 10 minutes.",
+                "Add yogurt, mango, and banana to a mixing bowl.",
+                "Add the bloomed chia seeds and mix well.",
+                "Serve in a bowl and top with blueberries."
+            ],
+            "youtube": "",
+            "description": "A refreshing and gut-friendly fruit bowl packed with probiotics, fiber, and natural sweetness.",
+            "nutrition": "Calories: 320 | Protein: 18g | Carbs: 42g | Fat: 6g"
+        },
+        {
+            "id": "tomato-chutney",
+            "title": "Tomato Chutney",
+            "date": "2025-12-10",
+            "image": "tomato-chutney.jpg",
+            "category": [
+                "Condiment",
+                "Nepali"
+            ],
+            "difficulty": "Easy",
+            "time": "25 minutes",
+            "ingredients": [
+                "2 tbsp cooking oil",
+                "1 tsp cumin seeds",
+                "3-4 cloves garlic, sliced",
+                "1/2 onion, sliced",
+                "2 large tomatoes, diced",
+                "Salt to taste",
+                "1/2 tsp turmeric powder",
+                "1 tsp cumin-coriander powder",
+                "2 green chilies",
+                "1 cup water",
+                "Fresh coriander for garnish",
+                "1/2 tsp Sichuan pepper"
+            ],
+            "steps": [
+                "Heat oil and add cumin seeds.",
+                "Add garlic and lightly toast.",
+                "Add onions and sauté briefly.",
+                "Add tomatoes, salt, turmeric, and cumin-coriander powder.",
+                "Cook until tomatoes soften.",
+                "Add water and chilies and boil for 10 minutes.",
+                "Top with coriander and let cool.",
+                "Blend with Sichuan pepper until smooth."
+            ],
+            "youtube": "",
+            "description": "A spicy, tangy Nepali-style tomato chutney that pairs perfectly with rice or roti.",
+            "nutrition": "Calories: 110 per serving | Fat: 6g | Carbs: 12g"
+        },
+        {
+            "id": "pico-de-gallo",
+            "title": "Pico de Gallo",
+            "date": "2025-12-10",
+            "image": "pico-de-gallo.jpg",
+            "category": [
+                "Mexican",
+                "Side Dish"
+            ],
+            "difficulty": "Easy",
+            "time": "10 minutes",
+            "ingredients": [
+                "1/2 white onion, finely diced",
+                "2 jalapeños, finely diced",
+                "1 large tomato, seeds removed and diced",
+                "Fresh coriander, finely chopped",
+                "Juice of 1 lemon",
+                "Salt to taste",
+                "1/2 tsp cumin powder"
+            ],
+            "steps": [
+                "Add all ingredients into a bowl.",
+                "Mix well until combined.",
+                "Chill slightly and serve with nachos."
+            ],
+            "youtube": "",
+            "description": "A fresh and zesty Mexican salsa perfect as a dip or taco topping.",
+            "nutrition": "Calories: 40 | Carbs: 9g | Fiber: 2g"
+        },
+        {
+            "id": "tofu-fried-rice",
+            "title": "Tofu Fried Rice",
+            "date": "2025-12-10",
+            "image": "tofu-fried-rice.jpg",
+            "category": [
+                "Asian",
+                "Main Course"
+            ],
+            "difficulty": "Easy",
+            "time": "20 minutes",
+            "ingredients": [
+                "200g tofu, diced",
+                "1/2 red onion, diced",
+                "1/2 cup frozen peas and corn",
+                "1/2 cup diced carrots",
+                "2 cloves garlic, finely chopped",
+                "2 cups cooked rice",
+                "1 tsp chili oil",
+                "1 tsp MSG",
+                "2 tbsp soy sauce",
+                "Salt to taste",
+                "Black pepper to taste",
+                "1/2 tsp sesame oil"
+            ],
+            "steps": [
+                "Heat oil in a pan and fry tofu until golden.",
+                "Add carrots, peas, corn, and onions and stir-fry.",
+                "Add garlic and lightly toast.",
+                "Add rice, chili oil, MSG and soy sauce.",
+                "Mix well and cook for 2–3 minutes.",
+                "Finish with black pepper and sesame oil.",
+                "Serve hot."
+            ],
+            "youtube": "",
+            "description": "A simple and flavorful tofu fried rice with crispy tofu and bold Asian flavors.",
+            "nutrition": "Calories: 410 | Protein: 18g | Carbs: 48g | Fat: 14g"
+        },
+        {
             "id": "chicken-thukpa",
             "title": "Chicken Thukpa",
+            "date": "2024-12-10",
             "image": "chicken-thukpa.jpg",
             "category": [
                 "Nepali",
@@ -12,39 +147,38 @@
             "time": "30 minutes",
             "ingredients": [
                 "200g chicken breast, sliced",
-                "200g noodles (any type)",
+                "200g noodles",
                 "1 onion, sliced",
                 "2 tomatoes, chopped",
                 "3-4 cloves garlic, minced",
                 "1 inch ginger, grated",
-                "2 green chilies, sliced",
-                "1 tsp turmeric powder",
-                "1 tsp cumin powder",
-                "1 tsp coriander powder",
-                "Salt to taste",
-                "2 tbsp cooking oil",
-                "4 cups chicken or vegetable broth",
-                "Fresh cilantro for garnish",
-                "Lime wedges for serving"
+                "2 green chilies",
+                "1 tsp turmeric",
+                "1 tsp cumin",
+                "1 tsp coriander",
+                "Salt",
+                "2 tbsp oil",
+                "4 cups broth",
+                "Cilantro",
+                "Lime wedges"
             ],
             "steps": [
-                "Heat oil in a large pot over medium heat. Add sliced onions and sauté until translucent.",
-                "Add minced garlic, grated ginger, and green chilies. Sauté for 1-2 minutes until fragrant.",
-                "Add turmeric, cumin, and coriander powder. Stir well.",
-                "Add chicken slices and cook until they turn white, about 5-6 minutes.",
-                "Add chopped tomatoes and cook until they soften, about 3-4 minutes.",
-                "Pour in the broth and bring to a boil. Reduce heat and simmer for 10 minutes.",
-                "Add noodles and cook according to package instructions (usually 5-7 minutes).",
-                "Season with salt to taste. Garnish with fresh cilantro.",
-                "Serve hot with lime wedges on the side."
+                "Sauté onions.",
+                "Add garlic, ginger and chilies.",
+                "Add spices and chicken.",
+                "Add tomatoes.",
+                "Pour broth and simmer.",
+                "Add noodles.",
+                "Season and garnish."
             ],
             "youtube": "",
-            "description": "A comforting Nepali noodle soup with tender chicken, aromatic spices, and fresh herbs. Perfect for a quick and satisfying meal.",
+            "description": "A warm Nepali noodle soup for comfort meals.",
             "nutrition": "Calories: 450 | Protein: 28g | Carbs: 45g | Fat: 15g"
         },
         {
             "id": "chicken-keema-noodles",
             "title": "Chicken Keema Noodles",
+            "date": "2024-12-05",
             "image": "chicken-keema-noodles.jpg",
             "category": [
                 "Nepali",
@@ -53,40 +187,33 @@
             "difficulty": "Medium",
             "time": "25 minutes",
             "ingredients": [
-                "250g ground chicken (keema)",
+                "250g chicken keema",
                 "200g noodles",
-                "1 onion, finely chopped",
-                "2 tomatoes, finely chopped",
-                "3-4 cloves garlic, minced",
-                "1 inch ginger, grated",
-                "2 green chilies, chopped",
-                "1 tsp garam masala",
-                "1 tsp red chili powder",
-                "1/2 tsp turmeric powder",
-                "1 tsp cumin seeds",
-                "Salt to taste",
-                "2 tbsp cooking oil",
-                "Fresh cilantro for garnish",
-                "Lime wedges"
+                "Onion",
+                "Tomato",
+                "Garlic",
+                "Ginger",
+                "Green chilies",
+                "Spices",
+                "Oil",
+                "Cilantro"
             ],
             "steps": [
-                "Heat oil in a large pan. Add cumin seeds and let them splutter.",
-                "Add chopped onions and sauté until golden brown.",
-                "Add garlic, ginger, and green chilies. Cook for 1 minute.",
-                "Add ground chicken and break it up with a spoon. Cook until browned, about 5-6 minutes.",
-                "Add turmeric, red chili powder, and garam masala. Mix well.",
-                "Add chopped tomatoes and cook until they break down, about 4-5 minutes.",
-                "Meanwhile, cook noodles according to package instructions. Drain and set aside.",
-                "Add cooked noodles to the chicken mixture. Toss everything together.",
-                "Season with salt. Garnish with fresh cilantro and serve with lime wedges."
+                "Sauté cumin seeds.",
+                "Cook onions, garlic and ginger.",
+                "Add chicken and spices.",
+                "Add tomatoes.",
+                "Toss noodles.",
+                "Serve."
             ],
             "youtube": "",
-            "description": "Spicy and flavorful Nepali-style chicken keema noodles. A quick stir-fry that's packed with aromatic spices and tender ground chicken.",
-            "nutrition": "Calories: 520 | Protein: 32g | Carbs: 48g | Fat: 18g"
+            "description": "Spicy Nepali keema noodles with big flavors.",
+            "nutrition": "Calories: 520 | Protein: 32g"
         },
         {
             "id": "avocado-toast-egg",
             "title": "Avocado Toast with Egg",
+            "date": "2024-12-01",
             "image": "avocado-toast-egg.jpg",
             "category": [
                 "Breakfast",
@@ -95,33 +222,27 @@
             "difficulty": "Easy",
             "time": "10 minutes",
             "ingredients": [
-                "2 slices sourdough bread",
-                "1 ripe avocado",
+                "2 bread slices",
+                "Avocado",
                 "2 eggs",
-                "1 tbsp olive oil",
-                "Salt and black pepper to taste",
-                "Red pepper flakes (optional)",
-                "Fresh lemon juice",
-                "Fresh chives or microgreens for garnish"
+                "Olive oil",
+                "Salt",
+                "Pepper"
             ],
             "steps": [
-                "Toast the bread slices until golden and crispy.",
-                "Cut the avocado in half, remove the pit, and scoop out the flesh into a bowl.",
-                "Mash the avocado with a fork. Add lemon juice, salt, and pepper. Mix well.",
-                "Heat olive oil in a non-stick pan over medium heat.",
-                "Crack the eggs into the pan and cook to your preference (sunny-side up or over-easy).",
-                "Spread the mashed avocado evenly on the toasted bread.",
-                "Place the cooked egg on top of the avocado toast.",
-                "Season with additional salt, pepper, and red pepper flakes if desired.",
-                "Garnish with fresh chives or microgreens and serve immediately."
+                "Toast bread.",
+                "Mash avocado.",
+                "Cook eggs.",
+                "Assemble and serve."
             ],
             "youtube": "",
-            "description": "A simple yet delicious breakfast classic. Creamy avocado paired with a perfectly cooked egg on crispy toast.",
-            "nutrition": "Calories: 380 | Protein: 16g | Carbs: 28g | Fat: 24g"
+            "description": "Classic breakfast toast with egg and avocado.",
+            "nutrition": "Calories: 380"
         },
         {
             "id": "homemade-chilli-oil",
             "title": "Homemade Chilli Oil",
+            "date": "2024-11-28",
             "image": "homemade-chilli-oil.jpg",
             "category": [
                 "Condiment",
@@ -130,33 +251,25 @@
             "difficulty": "Easy",
             "time": "15 minutes",
             "ingredients": [
-                "1 cup neutral oil (vegetable or canola)",
-                "3-4 tbsp red chili flakes",
-                "2 tbsp Sichuan peppercorns (optional)",
-                "3-4 cloves garlic, thinly sliced",
-                "1 inch ginger, julienned",
-                "1 star anise (optional)",
-                "1 cinnamon stick (optional)",
-                "1 tsp salt",
-                "1 tsp sesame seeds"
+                "Oil",
+                "Chili flakes",
+                "Garlic",
+                "Ginger",
+                "Spices"
             ],
             "steps": [
-                "In a heatproof bowl, combine red chili flakes, Sichuan peppercorns, salt, and sesame seeds.",
-                "Heat the oil in a saucepan over medium-low heat. Add garlic, ginger, star anise, and cinnamon stick.",
-                "Cook gently for 5-7 minutes until the garlic and ginger are golden but not burnt.",
-                "Remove the whole spices (star anise, cinnamon) from the oil.",
-                "Carefully pour the hot oil over the chili flake mixture. It should sizzle and bubble.",
-                "Stir well and let it cool completely.",
-                "Transfer to a clean jar and store in the refrigerator. It will keep for several weeks.",
-                "Use as a condiment for noodles, dumplings, rice, or any dish that needs a spicy kick."
+                "Heat oil with aromatics.",
+                "Pour over chili flakes.",
+                "Cool and store."
             ],
             "youtube": "",
-            "description": "A versatile and aromatic chili oil that adds heat and flavor to any dish. Easy to make and stores well.",
-            "nutrition": "Calories: 120 per tbsp | Fat: 14g | Sodium: 200mg"
+            "description": "A flavorful homemade chili oil.",
+            "nutrition": "Calories: 120 per tbsp"
         },
         {
             "id": "palpali-chukauni",
             "title": "Palpali Chukauni",
+            "date": "2024-11-20",
             "image": "palpali-chukauni.jpg",
             "category": [
                 "Nepali",
@@ -165,32 +278,19 @@
             "difficulty": "Easy",
             "time": "20 minutes",
             "ingredients": [
-                "500g boiled potatoes, cubed",
-                "1 cup thick yogurt",
-                "1 onion, finely chopped",
-                "2-3 green chilies, finely chopped",
-                "1 tbsp mustard oil",
-                "1 tsp fenugreek seeds",
-                "1/2 tsp turmeric powder",
-                "1/2 tsp red chili powder",
-                "Salt to taste",
-                "Fresh cilantro, chopped",
-                "Lime juice to taste"
+                "Potatoes",
+                "Yogurt",
+                "Onions",
+                "Spices"
             ],
             "steps": [
-                "Boil potatoes until tender. Let them cool, then cube them.",
-                "Heat mustard oil in a small pan. Add fenugreek seeds and let them splutter.",
-                "Add turmeric and red chili powder. Remove from heat immediately.",
-                "In a mixing bowl, combine cubed potatoes, chopped onion, and green chilies.",
-                "Add the spiced oil mixture and mix well.",
-                "Add thick yogurt and mix gently until everything is well combined.",
-                "Season with salt and add lime juice to taste.",
-                "Garnish with fresh cilantro and serve chilled or at room temperature.",
-                "This dish pairs perfectly with rice, roti, or as a side with any Nepali meal."
+                "Mix all.",
+                "Season.",
+                "Serve chilled."
             ],
             "youtube": "",
-            "description": "A tangy and refreshing Nepali potato salad from the Palpa region. Cool yogurt, spicy chilies, and aromatic fenugreek create a perfect balance.",
-            "nutrition": "Calories: 180 | Protein: 6g | Carbs: 28g | Fat: 5g"
+            "description": "Traditional Nepali potato yogurt salad.",
+            "nutrition": "Calories: 180"
         }
     ]
 }
