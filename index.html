@@ -38,17 +38,17 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="assets/images/lg-prashant-cooks.png" alt="Prashant Cooks Logo">
                 <span>Prashant Cooks</span>
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu"><span
                     class="material-icons">menu</span></button>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/recipes">Recipes</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +57,7 @@
         <section class="hero">
             <h1>Welcome to Prashant Cooks</h1>
             <p>Discover delicious recipes from Nepal and around the world. Simple, authentic, and easy to follow.</p>
-            <a href="recipes.html" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Explore
+            <a href="/recipes" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Explore
                 Recipes</a>
         </section>
 
@@ -87,10 +87,10 @@
                         class="material-icons">music_note</span></a>
             </div>
             <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="recipes.html">Recipes</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2025 Prashant Cooks. All rights reserved.</p>
@@ -99,6 +99,7 @@
     </footer>
 
     <script src="js/utils.js"></script>
+    <script src="js/routing.js"></script>
     <script src="js/main.js"></script>
     <script>
         // Load featured recipes on homepage
@@ -124,7 +125,7 @@
                 }
 
                 grid.innerHTML = featured.map(recipe => `
-          <article class="recipe-card" onclick="window.location.href='recipe.html?id=${recipe.id}'">
+          <article class="recipe-card" onclick="window.location.href=(window.PrashantCooks?.routing?.getCleanUrl('recipe.html') || 'recipe') + '?id=${recipe.id}'">
             <div class="recipe-card-image-wrapper">
               <img 
                 src="assets/images/${recipe.image}" 

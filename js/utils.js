@@ -64,51 +64,37 @@
         });
     }
 
-    // Get base path for GitHub Pages
-    // Detects if we're on a project page (e.g., /repo-name/) or user page (/)
+    // Get base path for GitHub Pages project sites
+    // For project sites: /repo-name/, for user sites: /
     function getBasePath() {
         const pathname = window.location.pathname;
-        // Extract repository name from pathname
-        // For project pages: /repo-name/ or /repo-name/page.html
-        const parts = pathname.split('/').filter(p => p && p !== 'index.html');
+        const segments = pathname.split('/').filter(s => s);
         
-        // If pathname contains what looks like a repo name (not just a page)
-        // Check if we're at root of a project page
-        if (pathname === '/' || pathname === '/index.html') {
-            // At root - check if URL suggests project page
-            // For GitHub Pages project sites, the URL is username.github.io/repo-name/
-            // We can't reliably detect this from pathname alone, so we'll use a different approach
-            return '';
-        }
-        
-        // If we have parts and the first doesn't look like a file, it might be repo name
-        if (parts.length > 0) {
-            const firstPart = parts[0];
-            // If it's not a file (no extension), it might be repo name
-            if (!firstPart.includes('.')) {
-                // Check if current page is in a subdirectory
-                const currentPage = window.location.pathname.split('/').pop();
-                if (currentPage && currentPage.includes('.')) {
-                    // We're on a page, so the repo name is the parent directory
-                    return '/' + firstPart + '/';
-                }
+        // If we have segments and the first doesn't look like a file, it's likely the repo name
+        if (segments.length > 0) {
+            const firstSegment = segments[0];
+            // Check if it's a file (has extension) or directory (repo name)
+            if (!firstSegment.includes('.')) {
+                // It's likely the repo name
+                return '/' + firstSegment + '/';
             }
         }
         
-        return '';
+        // Default: assume user site (root)
+        return '/';
     }
 
     // Initialize base path on load
     (function initBasePath() {
         const pathname = window.location.pathname;
-        let basePath = '';
+        let basePath = '/';
         
-        // Simple detection: if pathname is /repo-name/ or /repo-name/page.html
+        // Detect repo name from pathname
         const segments = pathname.split('/').filter(s => s);
         if (segments.length > 0) {
             const firstSegment = segments[0];
-            // If first segment doesn't have a file extension, it's likely the repo name
             if (!firstSegment.includes('.')) {
+                // Likely repo name
                 basePath = '/' + firstSegment + '/';
             }
         }
@@ -117,9 +103,19 @@
         window.PrashantCooks.basePath = basePath;
     })();
 
+    // Helper to get clean URL path (for navigation)
+    function getCleanUrl(path) {
+        const basePath = window.PrashantCooks?.basePath || '/';
+        // Remove leading slash from path if present
+        const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+        // Remove .html if present
+        const noExtension = cleanPath.replace(/\.html$/, '');
+        return basePath + noExtension;
+    }
+
     // Helper to get asset path
     function getAssetPath(path) {
-        const basePath = window.PrashantCooks?.basePath || '';
+        const basePath = window.PrashantCooks?.basePath || '/';
         // Remove leading slash from path if present
         const cleanPath = path.startsWith('/') ? path.substring(1) : path;
         return basePath + cleanPath;
@@ -136,6 +132,7 @@
         isInViewport,
         scrollToElement,
         getBasePath,
-        getAssetPath
+        getAssetPath,
+        getCleanUrl
     };
 })();
