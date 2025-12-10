@@ -8,18 +8,31 @@
     
     // Detect base path (repo name for project sites)
     function detectBasePath() {
+        const hostname = window.location.hostname;
         const pathname = window.location.pathname;
         const segments = pathname.split('/').filter(s => s);
         
-        // If first segment doesn't have a file extension, it's likely the repo name
+        // Only detect base path for GitHub Pages (github.io domains)
+        // On Vercel or other domains, always use root
+        if (!hostname.includes('github.io')) {
+            return '/';
+        }
+        
+        // For GitHub Pages, check if we're on a project site
+        // Project sites have format: username.github.io/repo-name/
+        // User sites have format: username.github.io/
         if (segments.length > 0) {
             const firstSegment = segments[0];
-            if (!firstSegment.includes('.')) {
+            // Known page names that shouldn't be treated as repo names
+            const knownPages = ['recipes', 'recipe', 'about', 'contact', 'index'];
+            
+            // If first segment is not a known page and doesn't have a file extension, it's likely the repo name
+            if (!firstSegment.includes('.') && !knownPages.includes(firstSegment)) {
                 return '/' + firstSegment + '/';
             }
         }
         
-        // Default to root for user sites
+        // Default to root for user sites or when on a known page
         return '/';
     }
     
