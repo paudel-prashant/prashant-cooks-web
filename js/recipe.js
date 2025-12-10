@@ -226,7 +226,7 @@
         <div class="error-message">
           <h2><span class="material-icons" style="vertical-align: middle; margin-right: 0.5rem;">error_outline</span>Error</h2>
           <p>${escapeHtml(message)}</p>
-          <a href="#" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;" data-href="recipes.html">
+          <a href="/recipes" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">
             <span class="material-icons">arrow_back</span>
             Back to Recipes
           </a>
